@@ -1,0 +1,350 @@
+/* o simbolo & seleciona um elemento dentro de outro */
+/* os primeiros comandos do css dee ser zerar margin e padding */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* corressponde a todo corpo da pagina */
+body{
+    background-color: #484848;
+    color: #082840;
+    font-family: sans-serif;
+}
+
+/* MENU DE NAVEGAÇÃO SUPERIOR */
+nav{
+    /* border: 1px red solid; */
+    background-color: #082840;
+    border-bottom: 10px solid #e0af73;
+    color: #e0af73;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    
+    /* estrutura de listas dentro da nav */
+    & ul{
+        /* border: 1px red solid; */
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        & li{
+            padding: 10px;
+            color: #e0af73;
+        }
+    }
+    /* imagens dentro da nav */
+    & img{
+        /* border: 1px red solid; */
+        height: 70px;
+    }
+
+    /* links dentro da nav */
+    & a{
+        text-decoration: none;
+        color: #e0af73;
+    }
+
+    /* icones das redes sociais dentro da nav */
+    .redes_sociais{
+        /* border: 1px red solid; */
+        & img{
+            height: 50px;
+        }
+    }
+}
+
+/* o uso de id é util para você chamar uma estrutura 
+comum no codigo de forma idividual, coo por exemplo as
+sections abaixo:  */
+.apresentacao{
+    /* border: 1px red solid; */
+    background-image: url(img/escritorio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #082840;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-bottom: #e0af73;
+
+    & img{
+        /* border: 1px red solid; */
+        height: 30vh;
+    }
+    &  ul{
+        /* border: 1px red solid; */
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;      
+        align-items: center;  
+        & li{
+            /* border: 1px red solid; */
+            padding: 10px;
+            & .confira{
+                /* border: 1px red solid; */
+                background-color: #082840;
+                color: white;
+                padding: 15px;
+                border-radius: 50px;
+                font-size: 20px;
+            }
+            & button{
+                font-size: 40px;
+                background-color: transparent;
+                border: transparent;
+                color: white;
+            }
+        }
+    }
+}
+.servicos{
+    /* border: 1px red solid; */
+    height: 80vh;
+    border-top: 10px solid #e0af73;
+    background-color: #082840;
+    color: #e0af73;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10px solid #e0af73 ;
+    & h1{
+        padding-bottom: 100px;
+    }
+
+    & ul{
+        /* border: 1px blue solid; */
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        
+
+        & li{
+            /* border: 1px black solid; */
+            & img{
+                /* border: 1px greenyellow solid; */
+                height: 70px;
+                padding-left: 50px;
+            }
+            & p{
+                /* border: 1px orange solid; */
+                display: flex;
+                width: 24vh;
+                text-align: center;
+            }
+        }
+    }
+}
+.sobre{
+    /* border: 1px red solid; */
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & p{
+        color: rgb(97, 97, 97);
+    }
+    & ul{
+        /* border: 1px red solid; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        & li{
+            /* border: 1px red solid; */
+            width: auto;
+            padding: 50px;
+            & h2{
+                padding: 25px;
+            }
+        }
+    }
+    & img{
+        width: 90vh;
+    }
+}
+.blog{
+    /* border: 1px red solid; */
+    color: #082840;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h2{
+        padding: 10px;
+    }
+
+    
+    & h4{
+        text-align: center;
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+        color: #e0af73;
+    }
+
+    & ul{
+        /* border: 1px red solid; */
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        & li{
+            /* border: 1px solid red; */
+            width: 50vh;
+            height: 60vh;
+            
+        }
+    }
+    & .news{
+        
+        background-color: #082840;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        border-radius: 20px;        
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        & img{
+            width: 50vh;
+            border-radius: 20px 20px 0 0;
+            border-bottom: 5px solid #e0af73;
+        }
+    }
+}
+.contatos{
+    background-image: url(img/fundo_contato.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    border-top: 5px solid #082840;
+    & h1{
+        font-size: 60px;
+        height: 50px;
+        color: #1d5b8a;
+    }
+    & i{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    & .redesSociais2{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 80%;
+        height: 10vh;
+
+        & li{
+            list-style: none;
+        }
+        
+        & img{
+            height: 70px;
+            padding: 20px;
+        }
+    }
+    & .formulario{
+        height: 80vh;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        & img{
+            height: 60vh;
+        }
+        & form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 60vh;
+            & button{
+                margin-top: 20px;
+                padding: 15px;
+                width: 130px;
+                background-color: #082840;
+                color: white;
+                border: transparent;
+                border-radius: 30px;
+                font-size: 20px;
+            }
+            & input{
+                width: 350px;
+                margin: 10px;
+            }
+        }
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #082840;
+    color: #e0af73;
+    text-align: center;
+    border-top: 5px solid #e0af73;
+
+    & .termos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid #745a3b;
+        & p{
+            padding: 5px;
+            font-size: 15px;
+        }
+    }
+
+    & .empresa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid #745a3b;
+
+        & img{
+            padding: 20px;
+        }  
+
+        & ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        & img{
+            height: 30px;
+        }
+    }
+    & div{
+        width: 60vh;
+        height: 40vh;
+        /* border: 1px solid red; */
+    }
+}
+
